@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../dist/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper.min.css" />
+		<script src="../../lib/swiper/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../lib/baiduTemplate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../lib/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="help">
+				<ul id="list">
+					<li>
+						<a href="#">二手优品</a>
+					</li>
+					<li>
+						<a href="#">手机回收</a>
+					</li>
+					<li>
+						<a href="#">手机维修</a>
+					</li>
+					<li>
+						<a href="#">电脑维修</a>
+					</li>
+					<li>
+						<a href="#">以旧换新</a>
+					</li>
+					<li>
+						<a href="#">手机租用</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../images/lun1.png" /></div>
+					<div class="swiper-slide"><img src="../images/lun2.png" /></div>
+					<div class="swiper-slide"><img src="../images/lun3.png" /></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<div class="left-list">
+				<div class="list1">
+					修手机/Pad
+				</div>
+				<div class="list1">
+					修电脑
+				</div>
+				<div class="list1">
+					卖手机/电脑
+				</div>
+				<div class="list1">
+					买二手机
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="list_in" id="lists0">
+					111111
+				</div>
+				<div class="list_in" id="lists1">
+					2222222222222
+				</div>
+				<div class="list_in" id="lists2">
+					3333333333
+				</div>
+				<div class="list_in" id="lists3">
+					4444444444
+				</div>
+			</div>
+
+			<div class="list">
+				<ul class="list0">
+					<li>
+						<a href="#"><img src="../images/tcb01.jpg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="../images/tcb02.jpg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="../images/tcb03.png" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="../images/tcb04.jpg" /></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="recycle1">
+				<h1>热门手机回收</h1>
+				<div class="free">
+					<ul>
+						<li>
+							<a href="#"><img src="../images/tcb_03-09.gif" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="../../dist/images/tcb05.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="../../dist/images/tcb06.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="../../dist/images/tcb07.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="../../dist/images/tcb08.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="../../dist/images/tcb09.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="recycle2">
+				<h1>优选精品</h1>
+				<div class="free">
+					<ul>
+						<li>
+							<a href="#"><img src="../images/tcb_06.gif" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="../../dist/images/tcb05.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="../../dist/images/tcb06.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="../../dist/images/tcb07.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="../../dist/images/tcb08.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="../../dist/images/tcb14.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="shop">
+				<h1>到店维修</h1>
+
+			</div>
+			<div id="seal">
+
+			</div>
+			<script type="text/html" id="list-temp">
+				<%for (var i = 0; i < data.length; i++) {%>
+
+				<div class="menu">
+					<div class="menu-left">
+						<img src="<%=data[i].imgurl%>" />
+
+					</div>
+					<div class="menu-right">
+						<div class="grand">
+							<%=data[i].name%>
+						</div>
+						<div class="business">
+							<%=data[i].business%>
+						</div>
+						<div class="adress">
+							<%=data[i].adress%>
+						</div>
+					</div>
+				</div>
+
+				<%}%>
+			</script>
+		</div>
+
+	</body>
+
+	<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

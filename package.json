@@ -1,0 +1,37 @@
+{
+  "name": "1709a_tcb",
+  "version": "1.0.0",
+  "description": "* 新建一个目录 1709a_tcb * cd 1709a_tcb/ * 在1709_tcb 内执行  git init * 在仓库内 新建 readme.md 文件，即本文件 * 再新建一个 .gitignore 文件，编辑文件 ,内容写上 node_modules,之后有什么不需要上传的文件，都写在这个文件中 * git add .  把当前目录下，所有未在.gitignore 中配置的文件添加到git中 * git commit -m '注释内容' * 在github上新建一个远程仓库 * 把本地仓库和远程仓库关联   git remote add origin 仓库地址 * git push -u origin master",
+  "main": "index.js",
+  "scripts": {
+    "build":"gulp",
+    "watch":"gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JessicaJFY123/1709A_tcb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JessicaJFY123/1709A_tcb/issues"
+  },
+  "homepage": "https://github.com/JessicaJFY123/1709A_tcb#readme",
+  "keywords": [],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^3.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
